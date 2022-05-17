@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        
+        var nota1= parseFloat(prompt("Digite sua nota da prova 1"))
+        var nota2= parseFloat(prompt("Digite sua nota da prova 2"))
+        while(nota1<0 || nota1>10){ 
+                 nota1= parseFloat(prompt(`Insira uma nota maior que ZERO ou menor que DEZ para a prova 1.`))
+        }
+        
+        while(nota2<0 || nota2>10){ 
+                 nota2= parseFloat(prompt(`Insira uma nota maior que ZERO ou menor que DEZ para a prova 2.`))
+        }
+        
+        var media= (nota1+nota2) /2
+        alert(`Sua média é: ${media}`)
+
+        
+           
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

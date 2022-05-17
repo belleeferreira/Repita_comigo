@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var res = "sim";
+        var aprovado = 0;
+        var reprovado = 0;
+
+        while (res === "sim"){
+            var n1 = parseFloat(prompt("Digite a primeira nota: "));
+            var n2 = parseFloat(prompt("Digite a segunda nota: "));
+            var media = (n1 + n2) / 2;
+            if (media > 6){
+                alert("Aluno aprovado!");
+                aprovado++
+            } else {
+                alert("Reprovado :(")
+                reprovado++
+            }
+            var res = prompt("Deseja calcular a média de outro aluno? Digite Sim ou Não.");
+
+            if(res === "não"){
+                alert("Obrigado!");
+            }
+        }
+
+            alert(`Numero de alunos aprovados  ${aprovado}`);
+            
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
